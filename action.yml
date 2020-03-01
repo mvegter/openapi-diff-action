@@ -1,0 +1,22 @@
+name: "OpenAPI Diff"
+
+description: "A GitHub Action to identify differences between Swagger or OpenApi specifications."
+
+branding:
+  icon: check-square
+  color: gray-dark
+
+inputs:
+  spec-file-path:
+    description: "Path to the Swagger or OpenApi specification file."
+    required: true
+
+outputs:
+  errors:
+    description: "A list of breaking, non breaking and unclassified differences found between the source and destination files."
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.spec-file-path }}
