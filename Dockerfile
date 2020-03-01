@@ -1,6 +1,9 @@
 # Container image that runs your code
 FROM node:12.16.1-alpine3.10
 
+# Install Git in the container
+RUN apk add --no-cache git
+
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 
