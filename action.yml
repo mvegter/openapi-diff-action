@@ -7,8 +7,11 @@ branding:
   color: gray-dark
 
 inputs:
-  spec-file-path:
-    description: "Path to the Swagger or OpenApi specification file."
+  base-spec:
+    description: "Path to the BASE Swagger or OpenApi specification file."
+    required: true
+  head-spec:
+    description: "Path to the HEAD Swagger or OpenApi specification file."
     required: true
 
 outputs:
@@ -19,4 +22,5 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.spec-file-path }}
+    - ${{ inputs.base-spec }}
+    - ${{ inputs.head-spec }}
