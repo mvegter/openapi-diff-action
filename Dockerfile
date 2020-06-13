@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM node:12.16.3-alpine3.11
+FROM node:12.18.0-alpine3.12
 
 # Install Git in the container
 RUN apk add --no-cache git
