@@ -1,6 +1,11 @@
 # OpenAPI Diff action
 A GitHub Action to identify differences between Swagger or OpenApi specifications.
 
+## Credits
+This GitHub Action is a wrapper for the NPM `openapi-diff` package by Atlassian. See the following links for more information:
+- https://www.npmjs.com/package/openapi-diff
+- https://bitbucket.org/atlassian/openapi-diff/src
+
 ## Usage
 ```yaml
     steps:
