@@ -3,18 +3,6 @@ A GitHub Action to identify differences between Swagger or OpenApi specification
 
 ## Usage
 ```yaml
-name: OpenAPI
-
-on:
-  pull_request:
-  push:
-    branches:
-      - master
-
-jobs:
-  validate:
-    runs-on: ubuntu-18.04
-
     steps:
       - name: Check out head branch
         uses: actions/checkout@v2
