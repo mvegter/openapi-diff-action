@@ -19,7 +19,7 @@ This GitHub Action is a wrapper for the NPM `openapi-diff` package by Atlassian.
           ref: master
           path: base
       - name: Run OpenAPI Diff (from HEAD revision)
-        uses: mvegter/openapi-diff-action@v0.2.0
+        uses: mvegter/openapi-diff-action@v0.23.3
         with:
           head-spec: head/spec/openapi.yaml
           base-spec: base/spec/openapi.yaml
